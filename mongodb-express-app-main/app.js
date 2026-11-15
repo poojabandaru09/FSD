@@ -8,9 +8,7 @@ const port = process.env.PORT || 7000;
 const mongoUrl = process.env.MONGO_URL;
 const databaseName = process.env.DB_NAME || "library_db";
 
-const client = new MongoClient(mongoUrl, {
-    serverSelectionTimeoutMS: 15000
-});
+const mongoUrl = process.env.MONGO_URL;
 
 let db;
 
